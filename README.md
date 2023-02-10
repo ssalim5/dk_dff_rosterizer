@@ -14,4 +14,4 @@ alt="Presentation" width="240" height="180" border="10" /></a>
 
 - A technical report can be found [here][1].
 
-[1]: https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet
+[1]: https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf
