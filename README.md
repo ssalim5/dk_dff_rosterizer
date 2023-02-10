@@ -10,8 +10,9 @@ Install the required modules and run from any location to generate an optimized 
    target="_blank"><img src="https://img.youtube.com/vi/zoqKWcT-wMo/0.jpg" 
 alt="Presentation" width="240" height="180" border="10" /></a>
 
-- The slidedeck in the video can be found [here] (https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf).
+- The slidedeck in the video can be found [here][1].
 
-- A technical report can be found [here][1].
+- A technical report based on our findings can be found [here][2].
 
 [1]: https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf
+[2]: https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Technical%20Report.pdf
