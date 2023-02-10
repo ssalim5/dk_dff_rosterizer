@@ -5,11 +5,13 @@ The capability to model future individual player performance and optimize the ov
 
 Install the required modules and run from any location to generate an optimized roster for DFF in 2020
 
-- A video detailing our idea, methods and findings: 
+- The slidedeck in the video can be found [here] (https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf).
+
+- A technical report can be found [here] (https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf)
+
+- A video detailing our idea, methods and findings:
+<br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=zoqKWcT-wMo" 
    target="_blank"><img src="https://img.youtube.com/vi/zoqKWcT-wMo/0.jpg" 
 alt="Presentation" width="240" height="180" border="10" /></a>
 
-- The slidedeck in the video can be found [here] (https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf).
-
-- A technical report can be found [here] (https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf)
