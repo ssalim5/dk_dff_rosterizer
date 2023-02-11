@@ -14,5 +14,28 @@ alt="Presentation" width="240" height="180" border="10" /></a>
 
 - A technical report based on our findings can be found [here][2].
 
+## Goal
+Major fantasy football platforms provide player point projections. One can optimize over these projections and get an ostensibly 'optimal' lineup. We sought out to also model player performances as well. We reason that past performances, in particular a player's most recent games, can be used to predict future performance.
+
+## Methodology
+- Data Collection
+We scrape historical fantasy football player salaries from <footballdiehards.com>
+Historical player statistics for the last 30 years are scraped from <stathead.com> and compiled into batches of weeks.
+
+-Modeling
+
+-Optimization
+
+-Evaluation
+
+## Feature Creation
+
+## Integer Program
+
+## Results
+
+
+
+
 [1]: https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf
 [2]: https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Technical%20Report.pdf
