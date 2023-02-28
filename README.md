@@ -17,24 +17,39 @@ alt="Presentation" width="240" height="180" border="10" /></a>
 ## Goal
 Major fantasy football platforms provide player point projections. One can optimize over these projections and get an ostensibly 'optimal' lineup. We sought out to also model player performances as well. We reason that past performances, in particular a player's most recent games, can be used to predict future performance.
 
-## Methodology
-- Data Collection
+## Data Collection
 We scrape historical fantasy football player salaries from <footballdiehards.com>
 Historical player statistics for the last 30 years are scraped from <stathead.com> and compiled into batches of weeks.
 
--Modeling
-
--Optimization
-
--Evaluation
+## Modeling
+We'd like to avoid excessive weight given to recent performances so decided on a Ridge Regression model. We found in our model selection steps that it outperformed simple linear and LASSO models.
 
 ## Feature Creation
+We compared different modeling approaches:
+- Predicting fantasy points
+- Predicting individual stats
+- Incorporate player positions
+- A rolling window: look at past 4-8 games to predict next game
+We found that predicting stats, including positions and increasing the window size led to the best results.
 
-## Integer Program
+## Integer Program & Optimization
+Given salaries and projected performances, we can formulate an integer program with the necessary player and salary constraints.
+We model outputs to optimize over the predicted player performances and with standard branch and bound methods can find an optimal solution.
+
+## Evaluation
+There are between 30-100 players available per position and on the order of 10^23 possible lineups. It is also difficult to predict performances and thus we recognize it is infeasible to find the global optimum.
+Thus we seek to beat our benchmarks: commercial predictions from experts such as DraftKings and FantasyPros.
 
 ## Results
+We compared the our model's optimal team against the optimal team based on DraftKings predictive performance models.
+Across the 2020 NFL season through Week 14, we found that for a window size between 3-6 games our model beat DK ~75% of the time.
+When using a 7 game window, for weeks 11-14, we outperformed DK each time.
 
-
+## Improvements
+In a future iteration we would seek to improve our feature engineering, model selection and game selection.
+We would seek to incorporate opponent defense statistics, weather as well as a team's general offensive competence.
+A ridge regression model is rather restrictive and so a neural network would likely constitute a better model.
+We were focused on predicting pure fantasy points. However the model  may be altered to account for different competition formats such as 50/50 or GPP, a larger opponent pool or the payout where we may want to aim for a riskier but potentially higher performing team.
 
 
 [1]: https://github.com/ssalim5/dk_dff_rosterizer/blob/master/Slideshow.pdf
